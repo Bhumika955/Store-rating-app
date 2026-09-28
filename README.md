@@ -1,17 +1,25 @@
 
 # RateHub - Full-Stack Store Rating & Management System
 
-RateHub is a full-stack, role-based store rating and management platform built using React.js, Node.js, Express.js, and PostgreSQL. It provides a secure environment for System Administrators, Store Owners, and Normal Users to manage stores, submit ratings, and monitor customer feedback.
+RateHub is a full-stack, role-based store rating and management platform built using React.js, Node.js, Express.js and PostgreSQL. It provides a secure environment for System Administrators, Store Owners and Normal Users to manage stores, submit ratings and monitor customer feedback.
+
+## 🌐 Live Deployment Links
+
+- **Frontend Application (Vercel):** [https://store-rating-app-delta-roan.vercel.app](https://store-rating-app-delta-roan.vercel.app)
+- **Backend API Service (Render):** [https://store-rating-backend-t56v.onrender.com](https://store-rating-backend-t56v.onrender.com)
+- **Database:** Serverless PostgreSQL on Neon
+
+---
 
 ## Features
 
 ### 1. System Administrator (ADMIN)
 
-- Dashboard with total users, stores, and ratings statistics.
+- Dashboard with total users, stores and ratings statistics.
 - Add and manage users with different roles.
-- Register new stores with name, email, and address.
-- Search users and stores by name, email, or address.
-- Filter users by role: ADMIN, STORE_OWNER, and USER.
+- Register new stores with name, email and address.
+- Search users and stores by name, email or address.
+- Filter users by role: ADMIN, STORE_OWNER and USER.
 - Sort table columns in ascending or descending order.
 - View average store ratings and store owner details.
 
@@ -19,7 +27,7 @@ RateHub is a full-stack, role-based store rating and management platform built u
 
 - Dedicated dashboard for assigned store details.
 - View the store's average rating.
-- View customer feedback, including customer names, emails, and ratings.
+- View customer feedback, including customer names, emails and ratings.
 - Change account password securely.
 
 ### 3. Normal User (USER)
@@ -92,12 +100,10 @@ Make sure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<YOUR_USERNAME>/store-rating-system.git
+git clone https://github.com/Bhumika955/Store-rating-app
 
-cd store-rating-system
+cd store-rating-app
 ```
-
-Replace `<YOUR_USERNAME>` with your GitHub username.
 
 ### 2. Database Setup
 
@@ -132,7 +138,6 @@ JWT_SECRET=your_super_secret_jwt_key
 
 Replace the database credentials and JWT secret with your own values.
 
-Make sure the `.env` file is not committed to GitHub.
 
 #### Seed Demo Data
 
@@ -204,7 +209,7 @@ RateHub implements server-side validation and authentication to protect user dat
 
 Additional security features:
 
-- Role-based access control for Admin, Store Owner, and Normal User.
+- Role-based access control for Admin, Store Owner and Normal User.
 - Protected routes and API endpoints.
 - JWT authentication middleware.
 - Automatic bearer token attachment through Axios interceptors.
@@ -214,7 +219,7 @@ Additional security features:
 
 1. Users log in or register through the authentication interface.
 2. The system identifies the user's role and provides access to the relevant dashboard.
-3. Administrators manage users, stores, and platform data.
+3. Administrators manage users, stores and platform data.
 4. Normal users browse stores and submit or update ratings.
 5. Store owners monitor average ratings and customer feedback.
 
@@ -234,4 +239,4 @@ Additional security features:
 
 ---
 
-Built with React.js, Node.js, Express.js, and PostgreSQL.
+Built with React.js, Node.js, Express.js and PostgreSQL.
